@@ -2,37 +2,40 @@ import serviceOrganizing from "@/assets/service-organizing.jpg";
 import serviceDecluttering from "@/assets/service-decluttering.jpg";
 import servicePacking from "@/assets/service-packing.jpg";
 import serviceEstate from "@/assets/service-estate.jpg";
-
-const services = [
-  {
-    title: "Home Organizing",
-    description: "Transform your living spaces into functional, beautiful areas that bring you peace and joy.",
-    image: serviceOrganizing,
-  },
-  {
-    title: "Downsizing & Decluttering",
-    description: "Letting go can be liberating. I'll guide you through the process with patience and clarity.",
-    image: serviceDecluttering,
-  },
-  {
-    title: "Packing & Unpacking",
-    description: "Moving is stressful enough. Let me handle the organizing side so you can focus on the excitement.",
-    image: servicePacking,
-  },
-  {
-    title: "Moving & Estate Sales",
-    description: "Comprehensive support for life transitions — from sorting to selling, I've got you covered.",
-    image: serviceEstate,
-  },
-];
+import { useLanguage } from "@/hooks/useLanguage";
 
 const Services = () => {
+  const { t } = useLanguage();
+
+  const services = [
+    {
+      title: t.services.organizing,
+      description: t.services.organizingDesc,
+      image: serviceOrganizing,
+    },
+    {
+      title: t.services.decluttering,
+      description: t.services.declutteringDesc,
+      image: serviceDecluttering,
+    },
+    {
+      title: t.services.packing,
+      description: t.services.packingDesc,
+      image: servicePacking,
+    },
+    {
+      title: t.services.estate,
+      description: t.services.estateDesc,
+      image: serviceEstate,
+    },
+  ];
+
   return (
     <section id="services" className="py-24 md:py-32 bg-secondary/50">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <p className="text-primary text-sm font-medium tracking-widest uppercase mb-3">What I offer</p>
-          <h2 className="font-display text-4xl md:text-5xl font-semibold text-foreground">My Services</h2>
+          <p className="text-primary text-sm font-medium tracking-widest uppercase mb-3">{t.services.label}</p>
+          <h2 className="font-display text-4xl md:text-5xl font-semibold text-foreground">{t.services.title}</h2>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
