@@ -61,9 +61,10 @@ export const translations = {
       label: "Ready to start?",
       title: "Let's Transform Your Space",
       description: "If you're ready to take the next step in your organizing or decluttering journey, I'd love to hear from you.",
-      phone: "Contact by Phone",
+      phone: "+972 58-716-3405",
       location: "Bet Shemesh, Jerusalem, Tel Aviv & surrounding areas",
       cta: "Contact Me",
+      whatsapp: "Chat on WhatsApp",
     },
     // Footer
     footer: {
@@ -133,9 +134,10 @@ export const translations = {
       label: "מוכנים להתחיל?",
       title: "בואו נשנה את המרחב שלכם",
       description: "אם אתם מוכנים לצעד הבא במסע הארגון או הסידור שלכם, אשמח לשמוע מכם.",
-      phone: "צור קשר בטלפון",
+      phone: "+972 58-716-3405",
       location: "בית שמש, ירושלים, תל אביב והסביבה",
       cta: "צרו קשר",
+      whatsapp: "שלחו הודעה בוואטסאפ",
     },
     // Footer
     footer: {
