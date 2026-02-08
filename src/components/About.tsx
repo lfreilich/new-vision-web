@@ -1,34 +1,37 @@
 import { Sparkles, Heart, Lightbulb } from "lucide-react";
 import karenPhoto from "@/assets/karen-furman.jpg";
-
-const values = [
-  {
-    icon: Lightbulb,
-    label: "Philosophy",
-    text: "Your home should be organized so you know where things are, to the degree that you feel relaxed and not stressed in your space.",
-  },
-  {
-    icon: Sparkles,
-    label: "Method",
-    text: "A combination of Marie Kondo + FlyLady + my own style. YOU make the decisions. YOU decide what to keep. I help provide clarity.",
-  },
-  {
-    icon: Heart,
-    label: "Attitude",
-    text: "Positive, enthusiastic, non-judgmental. I walk the walk, not just talk the talk.",
-  },
-];
+import { useLanguage } from "@/hooks/useLanguage";
 
 const About = () => {
+  const { t } = useLanguage();
+
+  const values = [
+    {
+      icon: Lightbulb,
+      label: t.about.philosophy,
+      text: t.about.philosophyText,
+    },
+    {
+      icon: Sparkles,
+      label: t.about.method,
+      text: t.about.methodText,
+    },
+    {
+      icon: Heart,
+      label: t.about.attitude,
+      text: t.about.attitudeText,
+    },
+  ];
+
   return (
     <section id="about" className="py-24 md:py-32 bg-background">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           {/* Header */}
           <div className="text-center mb-12">
-            <p className="text-primary text-sm font-medium tracking-widest uppercase mb-3">Nice to meet you</p>
+            <p className="text-primary text-sm font-medium tracking-widest uppercase mb-3">{t.about.label}</p>
             <h2 className="font-display text-4xl md:text-5xl font-semibold text-foreground">
-              Let's Get Acquainted
+              {t.about.title}
             </h2>
           </div>
 
@@ -43,12 +46,12 @@ const About = () => {
                 />
               </div>
             </div>
-            <div className="text-center md:text-left">
+            <div className="text-center md:text-start">
               <p className="text-muted-foreground text-lg leading-relaxed mb-4">
-                Hi, I'm <span className="text-foreground font-medium">Karen Furman</span> — home organizer and decluttering expert. I've had a knack for organizing since childhood and spent over 20 years as a classroom teacher. Now I use those skills to help my clients arrange their things and keep their homes decluttered and organized.
+                {t.about.bio1} <span className="text-foreground font-medium">{t.about.bioName}</span> {t.about.bio2}
               </p>
               <p className="text-muted-foreground text-base leading-relaxed">
-                I live in a small apartment with a large family of eight and have become adept at finding creative solutions to maximize every inch of space — whether it's a room, cabinet, or closet.
+                {t.about.bio3}
               </p>
             </div>
           </div>

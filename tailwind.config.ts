@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        display: ['"Playfair Display"', 'serif'],
-        body: ['"DM Sans"', 'sans-serif'],
+        display: ['"Playfair Display"', '"Frank Ruhl Libre"', 'serif'],
+        body: ['"DM Sans"', '"Heebo"', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
