@@ -21,14 +21,14 @@ const Contact = () => {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-12">
             <a
-              href="mailto:karen@karenfurman.com"
+              href="mailto:karen@theklutterkoach.com"
               className="inline-flex items-center gap-2 text-primary-foreground/90 hover:text-primary-foreground transition-colors"
             >
               <Mail size={18} />
-              <span>karen@karenfurman.com</span>
+              <span>karen@theklutterkoach.com</span>
             </a>
             <a
-              href="tel:+972000000000"
+              href="tel:+972587163405"
               className="inline-flex items-center gap-2 text-primary-foreground/90 hover:text-primary-foreground transition-colors"
             >
               <Phone size={18} />
@@ -46,7 +46,7 @@ const Contact = () => {
             size="lg"
             className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 rounded-full px-10 py-6 text-base font-medium"
           >
-            <a href="mailto:karen@karenfurman.com">{t.contact.cta}</a>
+            <a href="mailto:karen@theklutterkoach.com">{t.contact.cta}</a>
           </Button>
         </div>
       </div>
